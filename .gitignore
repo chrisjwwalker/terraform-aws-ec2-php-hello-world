@@ -10,3 +10,4 @@ override.tf.json
 .idea
 tfplan
 .DS_Store
+terraform.tfvars
