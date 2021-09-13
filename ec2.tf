@@ -16,5 +16,7 @@ resource "aws_instance" "php_hello_world" {
 
   monitoring = false
 
+  user_data = file("user-data.sh")
+
   tags = var.tags
 }
