@@ -11,7 +11,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.58.0 |
 
 ## Modules
 
@@ -28,9 +28,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | The size of the machine deployed into EC2 | `string` | n/a | yes |
-| <a name="input_region"></a> [region](#input\_region) | The AWS region IaC will be deployed to | `string` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | Set of tags associated with resources | `map(string)` | n/a | yes |
+| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | The size of the machine deployed into EC2 | `string` | `"t2.micro"` | no |
+| <a name="input_region"></a> [region](#input\_region) | The AWS region IaC will be deployed to | `string` | `"eu-west-2"` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Set of tags associated with resources | `map(string)` | <pre>{<br>  "hello": "world"<br>}</pre> | no |
 
 ## Outputs
 
