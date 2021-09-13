@@ -10,6 +10,11 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+variable "allowed_inbound_cidr_blocks" {
+  type        = list(string)
+  description = "IP address blocks that are permitted to access the EC2 instance"
+}
+
 variable "tags" {
   type        = map(string)
   description = "Set of tags associated with resources"
